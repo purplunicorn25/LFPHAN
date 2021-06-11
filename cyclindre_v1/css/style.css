@@ -1,0 +1,83 @@
+body {
+  /* background-color: white; */
+  margin: 0px;
+  overflow: hidden;
+  background-color: white;
+  transition: background-color 0.8s ease;
+}
+
+#canvas {
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+
+.frames {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.number {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 650%;
+  margin: 0px;
+  color: #dbb742;
+  transition: all 500ms;
+  user-select: none;
+}
+
+h1 {
+  position: absolute;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 250%;
+  margin: 0px;
+  user-select: none;
+}
+
+h2 {
+  position: absolute;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 130%;
+  margin: 0px;
+  user-select: none;
+  visibility: hidden;
+  user-select: none;
+}
+
+.type {
+  /* color: #d2e000; */
+  color: #e9fb61;
+  font-size: 115%;
+  /* text-shadow: 2px -2px #d2e000; */
+}
+
+.right {
+  position: absolute;
+  left: 70%;
+}
+
+.left {
+  position: absolute;
+  right: 70%;
+}
+
+.number:hover {
+  /* transform: scale(1.05); */
+  /* transition: all 1s; */
+}
+
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 500ms, opacity 500ms;
+}
+
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 2s linear 0s, opacity 500ms;
+}
